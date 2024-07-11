@@ -27,6 +27,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+#gapps
+$(call inherit-product,vendor/gapps/arm64/arm64-vendor.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
